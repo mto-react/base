@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './styles.css'
+import './styles.scss'
 
 export default function Main() {
     // const [count, setCount] = useState(0)

@@ -1,5 +1,5 @@
 import reactLogo from '@/assets/react.svg'
-import './styles.css'
+import './styles.scss'
 import AppContext from '../../contexts/AppContext'
 import { useContext } from 'react'
 
