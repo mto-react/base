@@ -2,6 +2,7 @@ import reactLogo from '@/assets/react.svg'
 import './styles.scss'
 import AppContext from '../../contexts/AppContext'
 import { useContext } from 'react'
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const { isLogin, setIsLogin } = useContext(AppContext)
@@ -18,10 +19,9 @@ export default function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        <a className="nav-link" href="#">Features</a>
-                        <a className="nav-link" href="#">Pricing</a>
-                        <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <Link className="nav-link active" to="/">Home</Link>
+                        <Link className="nav-link" to="/">Products</Link>
+                        <Link className="nav-link" to="/">About</Link>
                     </div>
                 </div>
 
